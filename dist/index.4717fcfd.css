@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap";
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11988,6 +11989,59 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+body {
+  font-family: PT Sans Narrow, sans-serif;
+}
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  -o-transition: all .3s ease 0s;
+  -o-border-radius: 20px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 13px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  transition: all .3s;
+}
+
+.btn.green {
+  background-color: #91b842;
+  border: 1px solid #91b842;
+}
+
+.btn.green:hover {
+  background-color: #5c752b;
+  border: 1px solid #5c752b;
+}
+
+.btn.orange {
+  background-color: #fd9d3e;
+  border: 1px solid #fd9d3e;
+}
+
+.btn.orange:hover {
+  background-color: #be6d1c;
+  border: 1px solid #be6d1c;
+}
+
+.btn.black {
+  background-color: #121619;
+}
+
+.btn.black:hover {
+  color: #121619;
+  background-color: #fff;
+  border: 1px solid #121619;
+}
+
+.btn:hover {
+  color: #fff;
+  border: none;
 }
 
 /*# sourceMappingURL=index.4717fcfd.css.map */
