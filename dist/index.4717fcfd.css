@@ -11995,6 +11995,11 @@ body {
   font-family: PT Sans Narrow, sans-serif;
 }
 
+a {
+  color: #121619;
+  text-decoration: none;
+}
+
 .btn {
   color: #fff;
   cursor: pointer;
@@ -12042,6 +12047,54 @@ body {
 .btn:hover {
   color: #fff;
   border: none;
+}
+
+.card {
+  width: 255px;
+  display: inline-block;
+}
+
+.card img {
+  transition: all .3s ease-in-out;
+  position: relative;
+  top: 0;
+}
+
+.card img:hover {
+  top: -10px;
+}
+
+.card .card-body {
+  text-align: center;
+  padding: 0;
+}
+
+.card .card-body .card-title {
+  text-transform: uppercase;
+  color: #121619;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  font-size: 18px;
+  transition: all .3s;
+}
+
+.card .card-body .card-title:hover {
+  color: #fd9d3e;
+}
+
+.card .card-body .card-text {
+  color: #999;
+  margin: 0;
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+
+.card .card-body .card-price {
+  color: #fd9d3e;
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=index.4717fcfd.css.map */

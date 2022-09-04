@@ -1,0 +1,41 @@
+.card {
+  display: inline-block;
+  width: 255px;
+  img {
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      top: -10px;
+    }
+  }
+  .card-body {
+    text-align: center;
+    padding: 0;
+    .card-title {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $color-black;
+      padding-top: 10px;
+      margin-bottom: 5px;
+      transition: 0.3s;
+      &:hover {
+        color: $color-orange;
+      }
+    }
+    .card-text {
+      font-size: 14px;
+      color: $color-gray-light;
+      padding-bottom: 8px;
+      margin: 0;
+    }
+
+    .card-price {
+      color: $color-orange;
+      padding-bottom: 15px;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+}
