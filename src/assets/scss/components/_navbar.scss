@@ -1,0 +1,100 @@
+.navbar {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  padding: 8px 16px;
+  justify-content: space-between;
+
+  .navbar-brand {
+    font-family: "Cabin Sketch", cursive;
+    font-size: 40px;
+    line-height: 1;
+    color: $color-orange;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s;
+    &:hover {
+      color: $color-white;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    i {
+      font-size: 24px;
+      color: $color-orange;
+      width: 21px;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .nav-collapse {
+    justify-content: end;
+    @include media-breakpoint-down(md) {
+      position: absolute;
+      height: 100vh;
+      width: 95vw;
+      top: 56px;
+      left: -100vw;
+      box-shadow: 5px 8px 10px 0px #00000052;
+      transition: all 0.6s;
+    }
+    &.enabled {
+      @include media-breakpoint-down(md) {
+        background-color: $color-orange;
+        left: 0;
+      }
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      display: flex;
+      margin-left: 20px;
+      @include media-breakpoint-down(md) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        padding: 0;
+        margin: 0;
+      }
+      &.m-hide {
+        display: none;
+        @include media-breakpoint-up(md) {
+          display: flex;
+        }
+      }
+      &.d-hide {
+        display: flex;
+        @include media-breakpoint-up(md) {
+          display: none;
+        }
+      }
+      .nav-link {
+        color: $color-white;
+        transition: all 0.3s;
+
+        @include media-breakpoint-down(md) {
+          padding: 16px 20px;
+          width: 100%;
+        }
+
+        i {
+          font-size: 14px;
+          padding-right: 4px;
+          transition: all 0.3s;
+        }
+        &:hover {
+          color: $color-orange;
+          @include media-breakpoint-down(md) {
+            color: $color-white;
+          }
+
+          i {
+            color: $color-orange;
+          }
+        }
+      }
+    }
+  }
+}

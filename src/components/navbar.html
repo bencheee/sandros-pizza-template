@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-md">
+  <a class="navbar-brand" href="#">Sandro's</a>
+  <button class="navbar-toggler" type="button">
+    <i class="fa-solid fa-bars" id="toggler-icon"></i>
+    <script>
+      let navbarToggler = document.querySelector(".navbar-toggler");
+      let togglerIcon = document.querySelector("#toggler-icon");
+      navbarToggler.addEventListener("click", () => {
+        if (togglerIcon.classList.contains("fa-bars")) {
+          togglerIcon.classList.remove("fa-bars");
+          togglerIcon.classList.add("fa-xmark");
+        } else {
+          togglerIcon.classList.add("fa-bars");
+          togglerIcon.classList.remove("fa-xmark");
+        }
+      });
+    </script>
+  </button>
+  <div class="nav-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#"
+          >REGISTER / LOGIN</a
+        >
+      </li>
+      <li class="nav-item d-hide">
+        <a class="nav-link" href="#">MENU</a>
+      </li>
+      <li class="nav-item d-hide">
+        <a class="nav-link" aria-current="page" href="#">MANAGE ORDER</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">ACCOUNT</a>
+      </li>
+      <li class="nav-item d-hide">
+        <a class="nav-link" aria-current="page" href="#">CONTACT</a>
+      </li>
+      <li class="nav-item m-hide">
+        <a class="nav-link" href="#">
+          <i class="fa-regular fa-message"></i>
+          CONTACT
+        </a>
+      </li>
+      <li class="nav-item m-hide">
+        <a class="nav-link" href="#">
+          <i class="fa-solid fa-cart-shopping"></i>
+          € 0.00
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">LOGOUT</a>
+      </li>
+      <li class="nav-item m-hide">
+        <button class="btn green">ORDER NOW</button>
+      </li>
+    </ul>
+  </div>
+  <script>
+    let navCollapse = document.querySelector(".nav-collapse");
+    navbarToggler.addEventListener("click", () => {
+      if (navCollapse.classList.contains("enabled")) {
+        navCollapse.classList.remove("enabled");
+      } else {
+        navCollapse.classList.add("enabled");
+      }
+    });
+  </script>
+</nav>

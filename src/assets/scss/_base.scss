@@ -2,7 +2,11 @@ body {
   font-family: "PT Sans Narrow", sans-serif;
 }
 
+* {
+  color: $color-white;
+}
+
 a {
   text-decoration: none;
-  color: $color-black;
+  color: $color-white;
 }
